@@ -1,0 +1,83 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Advanced CSS for FormDisplay component */
+
+/* Form container */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elements container */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label styles */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+  border-color: #5cb85c; /* Green border color when focused */
+}
+
+/* Submit button styles */
+button[type="submit"] {
+  background-color: #5cb85c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Optional: Error message styling */
+.error-message {
+  color: #d9534f;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+}
